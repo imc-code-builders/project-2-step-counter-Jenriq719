@@ -3,6 +3,8 @@ import log
 
 log.set_labels('strength')
 while True:
+    strength = accelerometer.get_strength()
+    log.add({'strength': strength})
     # Use log.add() to record the accelerometer strength
     # You can get the strength with accelerometer.get_strength()
     # You must pass a dictionary to log.add
